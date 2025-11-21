@@ -1,18 +1,5 @@
 # DOCUMENTACIÓN - FITBOT
 
-## 1. Portada
-
-**UNIVERSIDAD POPULAR DEL CESAR**  
-**SISTEMAS BASADOS EN CONOCIMIENTO**
-
-**DOCENTE:** ING. ESP. KAREN LORENA LEÓN PÉREZ
-
-**ESTUDIANTE:** [Nombre del Estudiante]  
-**FECHA:** [Fecha]  
-**NOTA:** _____
-
----
-
 ## 2. Introducción
 
 ### 2.1. Descripción del Proyecto
