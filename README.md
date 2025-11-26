@@ -1,8 +1,8 @@
 # DOCUMENTACIÓN - FITBOT
 
-## 2. Introducción
 
-### 2.1. Descripción del Proyecto
+
+### Descripción del Proyecto
 
 **FitBot** es un chatbot inteligente diseñado como asistente personal de entrenamiento y fitness. La aplicación web utiliza inteligencia artificial para proporcionar rutinas de ejercicio personalizadas, consejos de técnica deportiva y seguimiento de progreso en tiempo real.
 
@@ -10,7 +10,7 @@ El chatbot está desarrollado como una aplicación React moderna que integra la 
 
 La aplicación cuenta con una interfaz intuitiva que facilita la interacción mediante chat, permitiendo a los usuarios solicitar rutinas, obtener instrucciones detalladas de ejercicios, marcar su progreso y visualizar estadísticas de su actividad física.
 
-### 2.2. Objetivos
+###  Objetivos
 
 #### Objetivo General
 Desarrollar un chatbot inteligente que funcione como asistente personal de entrenamiento, proporcionando rutinas de ejercicio personalizadas y seguimiento de progreso mediante el uso de inteligencia artificial.
@@ -27,9 +27,9 @@ Desarrollar un chatbot inteligente que funcione como asistente personal de entre
 
 ---
 
-## 3. Requisitos
+##  Requisitos
 
-### 3.1. Requisitos Funcionales
+###  Requisitos Funcionales
 
 1. **RF-01: Autenticación y Perfil de Usuario**
    - El sistema debe permitir al usuario registrarse proporcionando nombre, nivel de experiencia y objetivos
@@ -97,44 +97,9 @@ Desarrollar un chatbot inteligente que funcione como asistente personal de entre
 
 ---
 
-## 4. Arquitectura del Sistema
 
-### 4.1. Diagrama de Arquitectura
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                        FRONTEND                              │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │              React Application (Vite)                 │   │
-│  │  ┌──────────────┐  ┌──────────────┐  ┌───────────┐  │   │
-│  │  │   UI Layer   │  │  State Mgmt  │  │  Hooks    │  │   │
-│  │  │  (Components)│  │  (useState)  │  │  (useEffect)│  │   │
-│  │  └──────────────┘  └──────────────┘  └───────────┘  │   │
-│  └──────────────────────────────────────────────────────┘   │
-└───────────────────────┬─────────────────────────────────────┘
-                        │
-                        │ HTTP/HTTPS (REST API)
-                        │
-┌───────────────────────┴─────────────────────────────────────┐
-│                    EXTERNAL API                              │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │              Cohere API (command-r7b-12-2024)        │   │
-│  │  • Chat Completions                                   │   │
-│  │  • Natural Language Processing                        │   │
-│  │  • Context-aware Responses                            │   │
-│  └──────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────┘
-
-┌─────────────────────────────────────────────────────────────┐
-│                    LOCAL STORAGE                             │
-│  • User Profile (Session)                                    │
-│  • Workout History (Session)                                 │
-│  • Progress Tracking (Session)                               │
-│  • Completed Exercises (Session)                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 4.2. Componentes Principales
+###  Componentes Principales
 
 - **Frontend (React)**: Interfaz de usuario construida con React, utilizando hooks para gestión de estado
 - **API Externa (Cohere)**: Servicio de IA que procesa las solicitudes del usuario y genera respuestas contextuales
@@ -144,13 +109,13 @@ Desarrollar un chatbot inteligente que funcione como asistente personal de entre
 
 ## 5. Tecnologías Utilizadas
 
-### 5.1. Lenguajes de Programación
+### Lenguajes de Programación
 
 - **JavaScript (ES6+)**: Lenguaje principal para el desarrollo de la aplicación
 - **JSX**: Extensión de sintaxis de JavaScript para la creación de componentes React
 - **CSS**: Estilos mediante Tailwind CSS (utility-first CSS framework)
 
-### 5.2. Frameworks y Librerías
+### Frameworks y Librerías
 
 #### Frontend
 - **React 19.2.0**: Biblioteca de JavaScript para construir interfaces de usuario
@@ -170,7 +135,7 @@ Desarrollar un chatbot inteligente que funcione como asistente personal de entre
 - **Autoprefixer 10.4.17**: Plugin de PostCSS para agregar prefijos de navegadores
 - **Concurrently 9.1.2**: Ejecutar múltiples comandos simultáneamente
 
-### 5.3. Plataformas y Servicios
+### Plataformas y Servicios
 
 - **Cohere API**: Plataforma de inteligencia artificial para procesamiento de lenguaje natural
   - Modelo utilizado: `command-r7b-12-2024`
@@ -180,9 +145,9 @@ Desarrollar un chatbot inteligente que funcione como asistente personal de entre
 
 ---
 
-## 6. Implementación
+##  Implementación
 
-### 6.1. Guía de Instalación
+###  Guía de Instalación
 
 #### Requisitos Previos
 - Node.js versión 16 o superior
@@ -271,9 +236,9 @@ const [apiKey, setApiKey] = useState('');               // API Key de Cohere
 
 ---
 
-## 7. Documentación de Usuario
 
-### 7.1. Manual de Usuario
+
+###  Manual de Usuario
 
 #### Inicio de Sesión
 
@@ -355,9 +320,9 @@ En la parte inferior del chat hay botones de acción rápida:
 
 ---
 
-## 8. Referencias
+##  Referencias
 
-### 8.1. Bibliografía
+###  Bibliografía
 
 1. React Documentation. (2024). *React - A JavaScript library for building user interfaces*. https://react.dev/
 
@@ -380,25 +345,7 @@ En la parte inferior del chat hay botones de acción rápida:
 - **Node.js**: https://nodejs.org/
 - **npm Documentation**: https://docs.npmjs.com/
 
----
 
-## 9. Evidencias
-
-### 9.1. Fotografías
-
-*[En esta sección se deben incluir capturas de pantalla de la aplicación funcionando, incluyendo:]*
-
-- Interfaz principal del chatbot
-- Ejemplo de conversación con el chatbot
-- Rutinas de ejercicios generadas
-- Panel de estadísticas
-- Modal de instrucciones de ejercicios
-- Panel de perfil de usuario
-- Modal de configuración de API Key
-
-*Nota: Las evidencias fotográficas deben ser agregadas al documento final antes de la entrega.*
-
----
 
 ## Conclusión
 
